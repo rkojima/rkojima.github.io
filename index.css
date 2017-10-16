@@ -85,7 +85,11 @@ section {
         display: none;
     }
 
+    .showLinks {
+        display: flex;
+        justify-content: flex-start;
 
+    }
 }
 
 /*nav {
