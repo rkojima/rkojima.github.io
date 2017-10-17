@@ -58,12 +58,32 @@ li a {
     display: none;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    margin: auto;
+}
+
 section {
     margin: auto;
     display: block;
-    height: 500px;
     position: relative;
     padding-top: 50px;
+}
+
+img {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+    max-height: 400px;
+}
+
+p {
+    margin: 0;
 }
 
 @media (max-width: 500px) {
@@ -88,8 +108,16 @@ section {
     .showLinks {
         display: flex;
         justify-content: flex-start;
-
     }
+
+    #desktop-screenshot {
+        width: 90%;
+    }
+
+    img {
+        background-size: contain;
+    }
+
 }
 
 /*nav {
