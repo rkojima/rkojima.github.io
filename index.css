@@ -17,13 +17,13 @@ body {
     margin: 0;
 }
 
-.white-section {
+/*.white-section {
     background-color: #bbb;
 }
 
 .gray-section {
     background-color: #ddd;
-}
+}*/
 
 .brand {
     display: flex;
@@ -58,21 +58,28 @@ li a {
     display: none;
 }
 
-.contact {
+#contact {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .icons {
     display: flex;
     margin: auto;
+    justify-content: center;
+}
+
+.fa-3x {
+    margin: 15px;
 }
 
 section {
     margin: auto;
     display: block;
-    position: relative;
     padding-top: 50px;
+    max-width: 800px;
+    position: relative;
 }
 
 img {
@@ -82,11 +89,65 @@ img {
     max-height: 400px;
 }
 
+#contact > a {
+    text-decoration: none;
+}
+
+.section-title {
+    text-align: center;
+}
+
 p {
     margin: 0;
 }
 
+img {
+  color: #fff;
+  background-color: #333;
+  transition: all 0.2s ease-out;
+} 
+
+img:hover,
+img:focus {
+  filter: brightness(50%);
+  background-color: #fff;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    height: 50%;
+}
+
+.project-link {
+    background: #e3e3e3;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+}
+
+
 @media (max-width: 500px) {
+    section {
+        position: relative;
+        width: 90%;
+    }
+
     ul {
         flex-direction: column;
 
@@ -111,64 +172,13 @@ p {
     }
 
     #desktop-screenshot {
-        width: 90%;
+        width: 100%;
     }
 
-    img {
-        background-size: contain;
+    .project-link {
+        padding: 1px 5px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
     }
-
 }
-
-/*nav {
-    overflow: hidden;
-    background-color: #ddd;
-    width: 100%;
-    position: fixed;
-    top: 0;
-
-    z-index: 1;
-}
-
-ul {
-    margin: 0;
-    float: right;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    text-decoration: none;
-    padding: 14px 16px;
-}
-
-section {
-    margin: auto;
-    display: block;
-    height: 500px;
-    position: relative;
-    padding-top: 50px;
-}
-
-
-
-p {
-    margin: auto;
-    text-align: center;
-}
-
-.sandwich {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .sandwich {
-        float: right;
-        display: block;
-        padding-top: 13px;
-        padding-bottom: 13px;
-    }
-}*/
