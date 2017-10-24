@@ -14,50 +14,67 @@
         <ul>
             <!-- <li><a class="brand" href="#">Home</a></li>-->
             <li><a class="sandwich" onclick="showLinks()">☰</a></li>
-            <li><a class="links" onclick="showLinks()" href="#about-me">About</a></li>
-            <li><a class="links" onclick="showLinks()" href="#project-1">Projects</a></li>
-            <li><a class="links" onclick="showLinks()" href="#contact">Contact</a></li>
-            <li><a class="links" onclick="showLinks()" href="#">Resume</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks()" href="#about-me">About</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks()" href="#project-1">Projects</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks()" href="#contact">Contact</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks()" href="#">Resume</a></li>
         </ul>
     </nav>
     <section class="white-section" id="hero">
-        <p>Hero</p>
+        <div class="hero-text">
+            <h1>Robert Kojima</h1>
+            <h1>Full Stack Developer</h1>
+        </div>
     </section>
     <section class="gray-section" id="about-me">
-        <p>About me</p>
-        <p>I've recently graduated from the Front End Web Development Career Path bootcamp at Thinkful. I'm currently looking for a junior fullstack developer position. What excites me is that there is so much to learn in the coding world; going to coding meetups had me thinking that learning is fun again. I am also starting to contribute on open source projects, such as Habitica. 
+        <h2>About me</h2>
+        <p>I've recently graduated from the Fullstack Web Development bootcamp at Thinkful. I'm currently looking for a junior fullstack developer position. What excites me is that there is so much to learn in the coding world; going to coding meetups had me thinking that learning is fun again. I am also starting to contribute on open source projects, such as Habitica. 
         </p> 
     </section>
-    <section class="white-section" id="project-1">
-        <p class="section-title">Project 1</p>
-        <img id="desktop-screenshot" src="./images/line-drive-screenshot.png">
-        <div class="img-overlay">
-            <a class="project-link live" href="https://line-drive-baseball.herokuapp.com">Repo</a>
-            <a class="project-link repo" href="https://github.com/rkojima/baseball-card-game">Live</a>         
-        </div>
+    
+    <section class="projects" id="project-1">
+        <h2>Projects</h2>
+        <p class="project-description">A baseball card game using stats to battle. Check baseball stats of the 2016 season players, as well as the career stats from legends. Send players to battle using their strengths. 
+        </p>
+        <p class="project-technologies">Technologies: React, Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
+        </p>            
+        <h3 class="section-title">Line Drive Baseball</h3>
+        <div class="project-section">
+            <img id="desktop-screenshot" src="./images/line-drive-screenshot.png">
+            <a class="project-link live" href="https://line-drive-baseball.herokuapp.com">Live</a>
+            <a class="project-link repo" href="https://github.com/rkojima/baseball-card-game">Repo</a>
+        </div>   
     </section>
-    <section class="gray-section" id="project-2">
-        <p class="section-title">Project 2</p>
-        <img id="mobile-screenshot" src="./images/remember-screenshot.png">
-        <div class="img-overlay">
-            <a class="project-link link-mobile live" href="https://murmuring-shore-62799.herokuapp.com/">Repo</a>
-            <a class="project-link link-mobile repo" href="https://github.com/rkojima/remember">Live</a>            
+    <section class="projects project-columns" id="project-2">
+        <h3 class="section-title">Remember</h3>
+        <p class="project-description">Note taking for your books, to remember what you read. Put a book in your library, set a timer, and read. After the timer goes off, write down a note. Check your notes for each book in your library
+        </p>
+        <p class="project-technologies">Technologies: Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
+        </p>
+        <div class="project-section">
+            <img id="mobile-screenshot" src="./images/remember-screenshot.png">
+            <a class="project-link link-mobile live" href="https://murmuring-shore-62799.herokuapp.com/">Live</a>
+            <a class="project-link link-mobile repo" href="https://github.com/rkojima/remember">Repo</a>  
         </div>
+
     </section>
-    <section class="white-section" id="project-3">
-        <p class="section-title">Project 3</p>
-        <img id="mobile-screenshot" src="./images/twitch-api-screenshot.png">
-        <div class="img-overlay">
-            <a class="project-link link-mobile live" href="https://is-streaming.herokuapp.com/">Repo</a>
-            <a class="project-link link-mobile repo" href="https://github.com/rkojima/is-streaming">Live</a>
+    <section class="projects project-columns" id="project-3">
+        <div class="project-section">
+            <img id="mobile-screenshot" src="./images/twitch-api-screenshot.png">
+            <a class="project-link link-mobile live" href="https://is-streaming.herokuapp.com/">Live</a>
+            <a class="project-link link-mobile repo" href="https://github.com/rkojima/is-streaming">Repo</a>
         </div>
+        <h3 class="section-title">Is Streaming?</h3>
+        <p class="project-description">A single page site that uses Twitch API to check whether a searched streamer is online or not. Also shows featured streamers.
+        </p>
+        <p class="project-technologies">Technologies: Javascript, HTML, CSS</p>
     </section>
     <section class="gray-section" id="contact">
         <h3>Contact</h3>
         <a href="mailto:rkojima@berkeley.edu">rkojima@berkeley.edu</a>  
         <div class="icons">
-            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            <a href="https://github.com/rkojima"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/robert-kojima/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
         </div>
     </section>
 </body>
