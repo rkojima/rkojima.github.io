@@ -12,3 +12,12 @@ function showLinks() {
         });
     }   
 }
+
+window.onscroll = function() {
+    const nav = document.getElementById('nav');
+    if (window.pageYOffset > document.documentElement.clientHeight * .6 + 99) {
+        nav.classList.add('nav-background');
+    } else {
+        nav.classList.remove('nav-background');
+    }
+}

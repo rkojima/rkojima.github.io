@@ -10,7 +10,7 @@
     <script src="https://use.fontawesome.com/34a29c0043.js"></script>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <ul>
             <!-- <li><a class="brand" href="#">Home</a></li>-->
             <li><a class="sandwich" onclick="showLinks()">☰</a></li>
@@ -22,8 +22,8 @@
     </nav>
     <section class="white-section" id="hero">
         <div class="hero-text">
-            <h1>Robert Kojima</h1>
-            <h1>Full Stack Developer</h1>
+            <h1 id="name">Robert Kojima</h1>
+            <h1 id="occupation">Full Stack Developer</h1>
         </div>
     </section>
     <section class="gray-section" id="about-me">
@@ -31,43 +31,65 @@
         <p>I've recently graduated from the Fullstack Web Development bootcamp at Thinkful. I'm currently looking for a junior fullstack developer position. What excites me is that there is so much to learn in the coding world; going to coding meetups had me thinking that learning is fun again. I am also starting to contribute on open source projects, such as Habitica. 
         </p> 
     </section>
-    
+    <h2>Projects</h2>
     <section class="projects" id="project-1">
-        <h2>Projects</h2>
-        <p class="project-description">A baseball card game using stats to battle. Check baseball stats of the 2016 season players, as well as the career stats from legends. Send players to battle using their strengths. 
-        </p>
-        <p class="project-technologies">Technologies: React, Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
-        </p>            
-        <h3 class="section-title">Line Drive Baseball</h3>
-        <div class="project-section">
-            <img id="desktop-screenshot" src="./images/line-drive-screenshot.png">
-            <a class="project-link live" href="https://line-drive-baseball.herokuapp.com">Live</a>
-            <a class="project-link repo" href="https://github.com/rkojima/baseball-card-game">Repo</a>
-        </div>   
-    </section>
-    <section class="projects project-columns" id="project-2">
-        <h3 class="section-title">Remember</h3>
-        <p class="project-description">Note taking for your books, to remember what you read. Put a book in your library, set a timer, and read. After the timer goes off, write down a note. Check your notes for each book in your library
-        </p>
-        <p class="project-technologies">Technologies: Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
-        </p>
-        <div class="project-section">
-            <img id="mobile-screenshot" src="./images/remember-screenshot.png">
-            <a class="project-link link-mobile live" href="https://murmuring-shore-62799.herokuapp.com/">Live</a>
-            <a class="project-link link-mobile repo" href="https://github.com/rkojima/remember">Repo</a>  
+        <div class="project-left">
+            <div class="project-image">
+                <img id="desktop-screenshot" src="./images/line-drive-screenshot.png">
+            </div>
         </div>
-
-    </section>
-    <section class="projects project-columns" id="project-3">
-        <div class="project-section">
-            <img id="mobile-screenshot" src="./images/twitch-api-screenshot.png">
-            <a class="project-link link-mobile live" href="https://is-streaming.herokuapp.com/">Live</a>
-            <a class="project-link link-mobile repo" href="https://github.com/rkojima/is-streaming">Repo</a>
+        <div class="project-right">
+            <div class="project-info">
+                <h3 class="project-title">Line Drive Baseball</h3>
+                <p class="project-description">A baseball card game using stats to battle. Check baseball stats of the 2016 season players, as well as the career stats from legends. Send players to battle using their strengths. 
+                </p>
+                <p class="project-technologies">Technologies: React, Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
+                </p>
+                <div class="project-links">
+                    <a class="project-link live" href="https://line-drive-baseball.herokuapp.com">Live</a>
+                    <a class="project-link repo" href="https://github.com/rkojima/baseball-card-game">Repo</a>
+                </div>
+            </div> 
         </div>
-        <h3 class="section-title">Is Streaming?</h3>
-        <p class="project-description">A single page site that uses Twitch API to check whether a searched streamer is online or not. Also shows featured streamers.
-        </p>
-        <p class="project-technologies">Technologies: Javascript, HTML, CSS</p>
+    </section>
+    <section class="projects" id="project-2">
+        <div class="project-left">
+            <div class="project-image">
+                <img class="mobile-screenshot" src="./images/remember-screenshot.png">  
+            </div>
+        </div>
+        <div class="project-right">
+            <div class="project-info">
+                <h3 class="project-title">Remember</h3>
+                <p class="project-description">Note taking for your books, to remember what you read. Put a book in your library, set a timer, and read. After the timer goes off, write down a note. Check your notes for each book in your library
+                </p>
+                <p class="project-technologies">Technologies: Express, Node.js, Mongoose, Mongo, Javascript, HTML, CSS
+                </p>
+                <div class="project-links">
+                    <a class="project-link link-mobile live" href="https://murmuring-shore-62799.herokuapp.com/">Live</a>
+                    <a class="project-link link-mobile repo" href="https://github.com/rkojima/remember">Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="project-3">
+        <div class="project-left">
+            <div class="project-image">
+                <img class="mobile-screenshot" src="./images/twitch-api-screenshot.png">
+            </div>
+        </div>
+        <div class="project-right">
+            <div class="project-info">
+                <h3 class="project-title">Is Streaming?</h3>
+                <p class="project-description">A single page site that uses Twitch API to check whether a searched streamer is online or not. Also shows featured streamers.
+                </p>
+                <p class="project-technologies">Technologies: Javascript, HTML, CSS</p>
+                <div class="project-links">
+                    <a class="project-link link-mobile live" href="https://is-streaming.herokuapp.com/">Live</a>
+                    <a class="project-link link-mobile repo" href="https://github.com/rkojima/is-streaming">Repo</a>
+                </div>
+            </div>  
+        </div>
     </section>
     <section class="gray-section" id="contact">
         <h3>Contact</h3>
