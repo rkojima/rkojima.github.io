@@ -160,6 +160,7 @@ img {
 p {
     margin: 0;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .project-image {
@@ -169,7 +170,7 @@ p {
 }
 
 .project-link {
-    border-radius: 2px;
+    border-radius: .15em;
     text-decoration: none;
     display: inline-block;
     background-color: #2EA9DF;
@@ -235,6 +236,22 @@ h2 {
 .nav-background {
     background-color: #A8DAF0;
     transition: .25s;
+}
+
+.project-technologies {
+    display: block;
+    text-align: center;
+}
+
+/*Styling technologies I used*/
+.pill {
+    display: inline-block;
+    font-size: .9em;
+    border-radius: .15em;
+    padding: .125rem .75rem;
+    margin: .25rem 0;
+    background-color: #E8E8E8;
+    color: #9e9e9e;
 }
 
 @media (max-width: 500px) {
