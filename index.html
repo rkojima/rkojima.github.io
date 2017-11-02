@@ -8,15 +8,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script type="text/javascript" src="index.js"></script>
     <script src="https://use.fontawesome.com/34a29c0043.js"></script>
+    <script type="text/javascript" src="smoothscroll.js"></script>
 </head>
 <body>
     <nav id="nav">
         <ul>
             <!-- <li><a class="brand" href="#">Home</a></li>-->
             <li><a class="sandwich" onclick="showLinks()">☰</a></li>
-            <li class="list-link"><a class="links" onclick="showLinks()" href="#about-me">About</a></li>
-            <li class="list-link"><a class="links" onclick="showLinks()" href="#projects-header">Projects</a></li>
-            <li class="list-link"><a class="links" onclick="showLinks()" href="#contact">Contact</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks('about-me')">About</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks('projects-header')">Projects</a></li>
+            <li class="list-link"><a class="links" onclick="showLinks('contact')">Contact</a></li>
             <!-- <li class="list-link"><a class="links" onclick="showLinks()" href="#">Resume</a></li> -->
         </ul>
     </nav>

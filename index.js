@@ -1,4 +1,4 @@
-function showLinks() {
+function showLinks(id) {
     // newLinks isn't quite an array, so needs to be somewhat typecasted
     const newLinks = Array.from(document.getElementsByClassName('links'));
     // Using forEach rather than map b/c not returning anything
@@ -10,7 +10,8 @@ function showLinks() {
         newLinks.forEach(function(link) {
             link.classList.add('showLinks');
         });
-    }   
+    } 
+    document.getElementById(id).scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
 }
 
 window.onscroll = function() {
